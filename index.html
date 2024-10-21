@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="assets/img/Logo.ico">
+        <title>Food Track</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/style_index.css"/>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    </head>
+    <body>
+        <!-- Navbar -->
+            <header>
+                <img class="logo_title" src="assets/img/Logo.png">
+                <h1 class="title" href="">Food Track</h1>
+                <a class="link" onclick="document.getElementById('log').style.display='block'"><h1 class="login">Connexion</h1></a>
+                <!-- <h1 class="login" href="includes/front/utilisateur.html">Compte</h1> -->
+                <hr class="vl">
+                <a class="link" onclick="document.getElementById('ticket').style.display='block'"><h1 class="ticket">Ticket</h1></a>
+            </header>
+        <!-- Fin Navbar -->
+
+            <!-- The Modal -->
+            <div id="log" class="modal">
+              <!-- Modal Content -->
+              <form class="modal-content" action="/includes/front/utilisateur.html">
+
+                <h2 class="form_title">Connexion</h2>
+                <hr>
+                <div class="container">
+                    <div>
+                        <label for="uname"><b>Nom Utilisateur</b></label>
+                    </div>
+                    <div>
+                        <input class="fo" type="text" placeholder="Entrer votre nom d'utilisateur" name="uname" required>
+                    </div>
+                    <div>
+                        <label for="psw"><b>Mot de passe</b></label>
+                    </div>
+                    <div>
+                        <input class="fo" type="password" placeholder="Entrer votre mot de passe" name="psw" required>
+                    </div>
+                  <hr>
+
+                  <ul>
+                      <li href="#" class="fa fa-facebook"></li>
+                      <li href="#" class="fa fa-apple"></li>
+                      <li href="#" class="fa fa-google"></li>
+                  </ul>
+                  <button class="logbtn" type="submit">Se Connecter</button>
+                  <div>
+                    <input type="checkbox" checked="checked" name="remember"> Connexion auto.
+                  </div>
+                </div>
+
+                <div class="container">
+                  <button type="button" onclick="document.getElementById('log').style.display='none'" class="cancelbtn">Annuler</button>
+                  <button type="button" onclick="document.getElementById('flog').style.display='block' ; document.getElementById('log').style.display='none'" class="nbtn">Mot de passe oublier ?</button>
+                  <button type="button" onclick="document.getElementById('sign').style.display='block' ; document.getElementById('log').style.display='none'" class="nbtn">Pas de compte ?</button>    
+                <a href="/includes/front/inscriptionfoodtruck.html" class="link"><button type="button" class="nbtn">Vous êtes un food truck ?</button></a>
+                  <script type="text/javascript"></script>
+                </div>
+              </form>
+            </div>
+
+            <!-- The Modal -->
+            <div id="flog" class="modal">   
+              <!-- Modal Content -->
+              <form class="modal-content" action="/action_page.php">
+                <h2 class="form_title">Récupération</h2>
+                <hr>
+                <div class="container">
+                    <div>
+                        <label for="mail"><b>Email</b></label>
+                    </div>
+                    <div>
+                        <input class="fo" type="email" placeholder="Entrer votre adresse email" name="mail" required>
+                    </div>
+
+                  <button class="logbtn" type="submit">Envoyer</button>
+                </div>
+
+                <div class="container">
+                  <button type="button" onclick="document.getElementById('flog').style.display='none'" class="cancelbtn">Annuler</button>
+                  <button type="button" onclick="document.getElementById('log').style.display='block' ; document.getElementById('flog').style.display='none'" class="nbtn">Connexion</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- The Modal -->
+            <div id="sign" class="modal">
+              <!-- Modal Content -->
+              <form class="modal-content" action="/action_page.php">
+                <h2 class="form_title">Inscription</h2>
+                <hr>
+                <div class="container">
+                    <div>
+                  <label for="mail"><b>Email</b></label>
+                    </div>
+                    <div>
+                  <input class="fo" type="email" placeholder="Entrer votre adresse email" name="mail" required>
+                    </div>
+                    <div>
+                  <label for="uname"><b>Nom Utilisateur</b></label>
+                    </div>
+                    <div>
+                  <input class="fo" type="text" placeholder="Entrer votre nom d'utilisateur" name="uname" required>
+                    </div>
+                    <div>
+                  <label for="psw"><b>Mot de passe</b></label>
+                    </div>
+                    <div>
+                  <input class="fo" type="password" placeholder="Entrer votre mot de passe" name="psw" required>
+                    </div>
+                    <div>
+                  <label for="psw-repeat"><b>Répéter mot de passe</b></label>
+                    </div>
+                    <div>
+                  <input class="fo" type="password" placeholder="Répéter votre mot de passe" name="psw-repeat" required>
+                    </div>
+                    <div>
+                  <label for="phone"><b>Numéro de téléphone</b></label>
+                    </div>
+                    <div>
+                  <input class="fo" type="number" placeholder="064048..." name="phone" required>
+                    </div>
+
+                  <button class="logbtn" type="submit" onclick="document.getElementById('log').style.display='block'; document.getElementById('sign').style.display='none'">S'inscrire</button>
+                  <p>En créant votre compte vous accepter les <a href="assets/doc/CGU.pdf" target="_blanck" style="color:dodgerblue">Règles de confidentialité et conditions d’utilisation</a>.</p>
+                </div>
+
+                <div class="container">
+                  <button type="button" onclick="document.getElementById('sign').style.display='none'" class="cancelbtn">Annuler</button>
+                  <button type="button" onclick="document.getElementById('log').style.display='block' ; document.getElementById('sign').style.display='none'" class="nbtn">Vous avez un compte ?</button> 
+                </div>
+              </form>
+            </div>
+<button class="learn-more" type="submit">Commande prête</button>
+            <!-- The Modal -->
+            <div id="disponibilite" class="modal">
+              <div class="form_title_dispo"><b>Voici les foodtrucks :</b></div>
+              <button type="button" onclick="document.getElementById('disponibilite').style.display='none'" class="cancelbtn_dispo">&times;</button>
+                <div class="container_dispo">
+                  <article class="card" role="article">
+                      <div class="card-text">
+                        <div class="card-meta"><b><u>Ami du Gras</u></b></div>
+                        <div class="card-title">Disponible tous les lundis</div>
+                        <a href="#" class="middlef fa fa-facebook"></a>
+                        <a href="#" class="middleg fa fa-twitter"></a>
+                        <a href="#" class="middlea fa fa-instagram"></a>
+                      </div>
+                      <img class="dp card-image" src="assets/img/foodtrack1.jpg" />
+                  </article>
+                  <article class="card" role="article">
+                      <div class="card-text">
+                        <div class="card-meta"><b><u>Saucisse Party</u></b></div>
+                        <div class="card-title">Disponible tous les mardis</div>
+                        <a href="#" class="middlef fa fa-facebook"></a>
+                        <a href="#" class="middleg fa fa-twitter"></a>
+                        <a href="#" class="middlea fa fa-instagram"></a>
+                      </div>
+                      <img class="dp card-image" src="assets/img/foodtrack2.jpg" />
+                  </article>
+                  <article class="card" role="article">
+                      <div class="card-text">
+                        <div class="card-meta"><b><u>Fritifiant</u></b></div>
+                        <div class="card-title">Disponible tous les mercredis</div>
+                        <a href="#" class="middlef fa fa-facebook"></a>
+                        <a href="#" class="middleg fa fa-twitter"></a>
+                        <a href="#" class="middlea fa fa-instagram"></a>
+                      </div>
+                      <img class="dp card-image" src="assets/img/foodtrack3.jpg" />
+                  </article>
+                  <article class="card" role="article">
+                      <div class="card-text">
+                        <div class="card-meta"><b><u>Burgerotron</u></b></div>
+                        <div class="card-title">Disponible tous les jeudis</div>
+                        <a href="#" class="middlef fa fa-facebook"></a>
+                        <a href="#" class="middleg fa fa-twitter"></a>
+                        <a href="#" class="middlea fa fa-instagram"></a>
+                      </div>
+                      <img class="dp card-image" src="assets/img/foodtrack4.jpg" />
+                  </article>
+                  <article class="card" role="article">
+                      <div class="card-text">
+                        <div class="card-meta"><b><u>Pliniure</u></b></div>
+                        <div class="card-title">Disponible tous les vendredis</div>
+                        <a href="#" class="middlef fa fa-facebook"></a>
+                        <a href="#" class="middleg fa fa-twitter"></a>
+                        <a href="#" class="middlea fa fa-instagram"></a>
+                      </div>
+                      <img class="dp card-image" src="assets/img/foodtrack5.jpg" />
+                  </article>
+                </div>
+            </div>
+
+            <div id="ticket" class="modal">
+              <button type="button" onclick="document.getElementById('ticket').style.display='none'" class="cancelbtn_dd">&times;</button>
+              <div class="encadrement_dd">
+              <div class="dropdown">
+                <button class="dropbtn"><b><span style="font-size: 40px;">Votre ticket : 45 2548</span><br><br>Horaire de repas : 13:30</b><br><br>Votre menu<img src="assets/img/darrow.png" style="position: relative; height: 15px;
+                  width: 15px; padding-left: 10px;"></button>
+                <div class="dropdown-content">
+                  <a>Big Mac<span style="float: right;">3€</span></a>
+                  <a>Ice Tea<span style="float: right;">2 . 50€</span></a>
+                  <a>Frites<span style="float: right;">2€</span></a>
+                  <a><b>Total : <span style="float: right;">7 . 50€</span></b></a>
+                </div>
+              </div>
+              </div>
+            </div>
+
+        <!-- Beginning of sections -->
+            <!-- Présentation (1) -->
+                <section id="Entreprise">
+                    <p class="text_presentation">Food Track est un site qui vous permet de précommander votre repas.</p>
+                    <ul>
+                        <li><a class="link" href="includes/front/commande.php"><button type="button" class="bi btn"><span>Commander</span></button></a></li>
+                        <!--<li><a class="link" onclick="document.getElementById('log').style.display='block'"><button type="button" class="bi btnd"><span>Commander</span></button></a></li>-->
+                        <li><a onclick="document.getElementById('disponibilite').style.display='block'"><button type="button" class="bi btn"><span>Vérifier les disponibilités</span></button></a></li>
+                    </ul>
+                </section>
+            <!-- Gallery (2) -->
+                <section id="Menu">
+                    <div class="title_gallery"><span>Ce que vous pouvez trouver chez nous</span></div>
+                    <div class='separation'>
+                    <hr style="background-color: #262626; height: 2.5px; border: 0;">
+                    </div>
+                    <div class="gallery">
+                        <div class="gallery-item">
+                            <img class="gallery-image" src="assets/img/fporn1.jpg" style="border-color: red;">
+                            <div class="middle">
+                                <button class="text">Régalade</button>
+                            </div>
+                            <div class="dispo" style="border-color: red;">
+                              <button class="text">Pas disponible</button>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img class="gallery-image" src="assets/img/fporn2.jpg" style="border-color: red;">
+                            <div class="middle">
+                                <div class="text">Ami des diabétiques</div>
+                            </div>
+                            <div class="dispo" style="border-color: red;">
+                              <button class="text">Pas disponible</button>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img class="gallery-image" src="assets/img/fporn3.jpg" style="border-color: green;">
+                            <div class="middle">
+                                <div class="text">Pas d'inspi</div>
+                            </div>  
+                            <div class="dispo" style="border-color: green;">
+                              <button class="text">Disponible</button>
+                            </div>                          
+                        </div>
+                        <div class="gallery-item">
+                            <img class="gallery-image" src="assets/img/fporn4.jpg" style="border-color: red;">
+                            <div class="middle">
+                                <div class="text">Dépression</div>
+                            </div>
+                            <div class="dispo" style="border-color: red;">
+                              <button class="text">Pas disponible</button>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img class="gallery-image" src="assets/img/fporn5.jpg" style="border-color: green;">
+                            <div class="middle">
+                                <div class="text">La Fatigue</div>
+                            </div>
+                            <div class="dispo" style="border-color: green;">
+                              <button class="text">Disponible</button>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img class="gallery-image" src="assets/img/fporn6.jpg" style="border-color: green;">
+                            <div class="middle">
+                                <div class="text">Cerveau de mollusque</div>
+                            </div>
+                            <div class="dispo" style="border-color: green;">
+                              <button class="text">Disponible</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        <!-- End of sections -->
+
+        <!-- Footer -->
+            <footer>
+                <div><a href="assets/doc/CGU.pdf" target="_blanck" class="decoration">Conditions générales d'utilisation</a></div>
+                <div><a href="assets/doc/CGV.pdf" target="_blanck" class="decoration">Conditions générales de vente</a></div>
+                <div><a href="assets/doc/ML.pdf" target="_blanck" class="decoration">Mentions légales et politique de confidentialité</a></div>
+                <div><a>Copyright &copy; 2020 FOODTRACK</a></div>
+            </footer>
+    </body>
+</html>

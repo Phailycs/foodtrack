@@ -1,0 +1,636 @@
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-family: 'Sofia';
+        position: relative;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        left: 0;
+        color: white;
+    }
+    
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    /* Beginning of the header */
+    
+    header {
+        background-color: #262626;
+        top: 0px;
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        color: white;
+        z-index: 99;
+    }
+    
+    .link {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .title {
+        position: absolute;
+        margin: 0;
+        top: 5px;
+        left: 115px;
+    }
+    
+    .logo_title {
+        position: absolute;
+        left: 40px;
+        width: 65px;
+        height: 58px;
+        top: 2px;
+    }
+    
+    .login {
+        position: absolute;
+        cursor: pointer;
+        margin: 0;
+        top: 5px;
+        right: 5%;
+        text-decoration: none;
+        color: white;
+        transition: transform 0.75s ease-out;
+    }
+    
+    .login:hover {
+        transform: scale(0.9);
+    }
+    
+    .ticket {
+        position: absolute;
+        cursor: pointer;
+        margin: 0;
+        top: 5px;
+        right: 20%;
+        text-decoration: none;
+        color: white;
+        transition: transform 0.75s ease-out;
+    }
+    
+    .ticket:hover {
+        transform: scale(0.9);
+    }
+    
+    .vl {
+        position: absolute;
+        margin: 0;
+        height: 75%;
+        top: 8px;
+        right: 15%;
+        border-color: white;
+    }
+    /* End of the header */
+    /* Début de la section pop-up */
+    /* Bordered form */
+    
+    form {
+        font-size: 1.25vw;
+        color: #262626;
+    }
+    
+    .form_title {
+        text-align: center;
+        color: #262626;
+    }
+    /* Full-width inputs */
+    
+    .fo[type=text],
+    .fo[type=password],
+    .fo[type=email],
+    .fo[type=number] {
+        font-family: 'Sofia';
+        font-size: 1vw;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        box-sizing: border-box;
+        transition: 0.75s ease-out;
+    }
+    
+    hr {
+        border: 1px solid #262626;
+    }
+    
+    .fa {
+        width: 25%;
+        margin: 5px 10px;
+        padding: 2.5%;
+        opacity: 0.85;
+        border-radius: 15px;
+        text-align: center;
+        text-decoration: none;
+        transition: .5s ease-out;
+    }
+    
+    .fa:hover {
+        background: #262626;
+        color: white;
+    }
+    
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+    
+    .fa-apple {
+        background: white;
+        color: #262626;
+    }
+    
+    .fa-google {
+        background: #dd4b39;
+        color: white;
+    }
+    
+    .fa-twitter {
+        background: #00acee;
+        color: white;
+    }
+    
+    .fa-instagram {
+        background: linear-gradient(217deg, rgba(64, 93, 230, 1), rgba(88, 81, 219, 0) 70.41%), linear-gradient(127deg, rgba(131, 58, 180, 1), rgba(193, 53, 132, 0) 70.41%), linear-gradient(336deg, rgba(225, 48, 108, 1), rgba(253, 29, 29, 0) 70.41%), linear-gradient(424deg, rgba(245, 96, 64, 1), rgba(247, 119, 55, 0) 70.41%), linear-gradient(260deg, rgba(252, 175, 69, 1), rgba(255, 220, 128, 0) 70.41%);
+        color: white;
+    }
+    /* Set a style for all buttons */
+    
+    .logbtn {
+        font-family: 'Sofia';
+        font-size: 1.05vw;
+        background-color: white;
+        color: #262626;
+        padding: 14px 20px;
+        margin: 8px auto;
+        border: none;
+        opacity: 0.9;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 15px;
+        transition: .5s ease-out;
+    }
+    /* Add a hover effect for buttons */
+    
+    .logbtn:hover {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+    
+    .encadrement_dd {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .dropbtn {
+        font-family: 'Sophia';
+        background-color: white;
+        color: #262626;
+        padding: 150px;
+        font-size: 30px;
+        border: none;
+        transition: .75s ease-out;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: #262626;
+        font-size: 25px;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+        background-color: #262626;
+        color: white;
+    }
+    /* Extra style for the cancel button (red) */
+    
+    .cancelbtn_dd {
+        position: absolute;
+        top: 4.5%;
+        left: 66.25%;
+        width: auto;
+        color: white;
+        font-size: 1.25vw;
+        font-weight: bold;
+        padding: 13px 18px;
+        border: none;
+        border-radius: 100%;
+        cursor: pointer;
+        z-index: 2;
+        background-color: #f44336;
+        transition: 0.75s ease-out;
+    }
+    
+    .cancelbtn_dd:hover {
+        background-color: white;
+        color: #262626;
+        box-shadow: -5px 2px 0 #262626;
+    }
+    /* Extra style for the cancel button (red) */
+    
+    .cancelbtn {
+        font-family: 'Sofia';
+        font-size: 1.05vw;
+        width: auto;
+        color: white;
+        padding: 10px 18px;
+        border: none;
+        opacity: 0.9;
+        cursor: pointer;
+        border-radius: 15px;
+        background-color: #f44336;
+    }
+    
+    .cancelbtn:hover {
+        opacity: 1;
+    }
+    
+    .nbtn {
+        font-family: 'Sofia';
+        font-size: 1.05vw;
+        width: auto;
+        border: none;
+        color: white;
+        float: right;
+        cursor: pointer;
+        opacity: 0.9;
+        border-radius: 15px;
+        padding: 10px 18px;
+        margin: 0 2%;
+        background-color: #F09323;
+    }
+    
+    .nbtn:hover {
+        opacity: 1;
+    }
+    /* Add padding to containers */
+    
+    .container {
+        padding: 16px;
+    }
+    /* Change styles for span and cancel button on extra small screens */
+    
+    @media screen and (max-width: 300px) {
+        .cancelbtn {
+            width: 100%;
+        }
+        .nbtn {
+            width: 100%;
+        }
+    }
+    /* The Modal (background) */
+    
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 999;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Fallback color */
+        background-color: #F2D399;
+    }
+    /* Modal Content/Box */
+    
+    .modal-content {
+        margin: 5px auto;
+        /* 15% from the top and centered */
+        width: 80%;
+        /* Could be more or less, depending on screen size */
+    }
+    
+    .modal::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .container_dispo {
+        position: absolute;
+        width: 100%;
+        top: 20%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .dp {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+    
+    .card {
+        width: 350px;
+        height: 475px;
+        margin: 20px;
+        position: relative;
+    }
+    
+    .card-image {
+        height: 350px;
+        object-fit: cover;
+    }
+    
+    .card-meta {
+        font-size: 1.5vw;
+        letter-spacing: 1px;
+    }
+    
+    .card-text {
+        color: #FFF;
+        background-color: rgba(17, 17, 17, 0.65);
+        position: absolute;
+        padding: 20px;
+        font-size: .5vw;
+        z-index: 10;
+        height: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+    }
+    
+    .card-title {
+        margin: 8px 0;
+        font-weight: 300;
+        font-size: 1.875em;
+    }
+    
+    .form_title_dispo {
+        text-align: center;
+        color: #262626;
+        font-size: 42px;
+    }
+    
+    .cancelbtn_dispo {
+        position: absolute;
+        top: 7%;
+        left: 70%;
+        width: auto;
+        color: white;
+        font-size: 1.25vw;
+        font-weight: bold;
+        padding: 13px 18px;
+        border: none;
+        border-radius: 100%;
+        cursor: pointer;
+        z-index: 2;
+        background-color: #f44336;
+        transition: 0.75s ease-out;
+    }
+    
+    .cancelbtn_dispo:hover {
+        background-color: white;
+        color: #262626;
+        box-shadow: -5px 2px 0 #262626;
+    }
+    
+    .middlef {
+        opacity: 1;
+        position: absolute;
+        top: 100%;
+        left: 20%;
+        width: 20%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .middleg {
+        opacity: 1;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 20%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .middlea {
+        opacity: 1;
+        position: absolute;
+        top: 100%;
+        left: 80%;
+        width: 20%;
+        transform: translate(-50%, -50%);
+    }
+    /* Fin de la section pop-up */
+    /* Beginning of the sections */
+    
+    section {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    /* Beginning of the first section */
+    
+    section:nth-of-type(1) {
+        background: linear-gradient(170deg, #262626 45%, #F2D399 45%);
+        font-size: 3vw;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        height: 100%;
+    }
+    
+    .text_presentation {
+        margin: auto;
+        padding-top: 10%;
+        background: -webkit-linear-gradient(100deg, #262626 30%, #F2D39A 30%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    section ul li {
+        display: inline;
+    }
+    
+    .btn {
+        font-family: 'Sofia';
+        font-size: 0.8vw;
+        background-color: #262626;
+        color: white;
+        padding: 14px 20px;
+        margin: 7% 0;
+        border: none;
+        cursor: pointer;
+        width: 40%;
+        border-radius: 35px;
+        text-decoration: none;
+        transition: ease 0.75s;
+    }
+    
+    .btn:hover {
+        opacity: 0.9;
+        box-shadow: -5px 5px 0 0.5px;
+    }
+    
+    .btnd {
+        font-family: 'Sofia';
+        font-size: 0.8vw;
+        background-color: grey;
+        box-shadow: -5px 5px 0 0.5px;
+        color: white;
+        padding: 14px 20px;
+        margin: 7% 0;
+        border: none;
+        width: 40%;
+        border-radius: 35px;
+        text-decoration: none;
+        transition: ease 0.75s;
+    }
+    
+    .btn span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+    
+    .btn span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: -1px;
+        right: -20px;
+        transition: 0.5s;
+    }
+    
+    .btn:hover span {
+        padding-right: 25px;
+    }
+    
+    .btn:hover span:after {
+        opacity: 1;
+        right: 10px;
+    }
+    /* End of the first section
+
+    /* Beginning of the second section */
+    
+    section:nth-of-type(2) {
+        background-color: #F2D399;
+        height: 100%;
+    }
+    
+    .title_gallery {
+        text-align: center;
+        color: #262626;
+        margin-top: -5%;
+        margin-bottom: 3%;
+        font-size: 2vw;
+        font-weight: bold;
+    }
+    
+    .separation {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .gallery-item {
+        position: relative;
+        flex: 1 0 20rem;
+        margin: 3rem 3rem 3rem 3rem;
+    }
+    
+    .gallery-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    @supports (display: grid) {
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+            grid-gap: 2rem;
+            overflow: hidden;
+        }
+    }
+    
+    .dispo {
+        border: 3px solid;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .text {
+        font-family: 'Sofia';
+        background-color: white;
+        color: black;
+        font-size: 16px;
+        padding: 12px 25px;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    .middle {
+        opacity: 1;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    /* End of the second section */
+    /* End of sections */
+    /* Beginning of the footer */
+    
+    footer {
+        width: 100%;
+        background-color: #262626;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1vw;
+        color: white;
+        height: 100%;
+        bottom: 0;
+    }
+    
+    .decoration {
+        text-decoration: none;
+        color: white;
+    }
+    /* End of sections */

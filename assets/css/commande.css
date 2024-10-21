@@ -1,0 +1,213 @@
+/* Beginning of index CSS */
+html {
+scroll-behavior: smooth;
+}
+body 
+{
+font-family: 'Sofia';
+position: relative;
+margin: 0;
+padding: 0;
+top: 0;
+left: 0;
+color: white;
+}
+body::-webkit-scrollbar {
+display: none;
+}
+
+/* Beginning of the header */
+
+header {
+  background-color: #262626;
+  top:0; 
+  height: 7vh;
+  width: 100%;
+  position: fixed;
+  color: white;
+  z-index: 999;
+}
+
+header h1 a{
+  text-decoration: none;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  position: absolute; 
+  top: -25%; 
+  left: 8%;
+}
+
+.logo_title {
+  position: absolute;
+  left: 4%;
+  width: 65px;
+  height: 58px;
+  top: 4%;
+}
+
+.acceuil {
+  position: absolute;
+  cursor: pointer; 
+  top: -20%; 
+  right: 4%;
+  text-decoration: none;
+  color: white;
+  transition: .75s;
+}
+
+.acceuil:hover {
+  transform: scale(0.9);
+}
+/* End of the header */
+
+/* Beginning of the sections */
+
+section 
+{
+background-color: #F2EBDF;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+width: 100%;
+}
+/* Beginning of the first section */
+section:nth-of-type(1)
+{
+background-image: url('../img/banner.jpeg');
+color: white;
+} 
+
+.content {
+  position: absolute;
+  background-color: #F2EBDF;
+  opacity: 0.8;
+  width: 40%;
+  height: 35%;
+  top: 35%;
+  right: 0;
+  font-size: 2vw;
+}
+
+.textp {
+  position: absolute;
+  opacity: 1;
+  color: black;
+  left: 10%;
+  top: 10%;
+}
+
+.sbp {
+  font-size: 1.25vw;
+  margin-left: 1.75%;
+}
+
+
+/* End of the first section
+
+/* Beginning of the second section */
+section:nth-of-type(2)
+{
+background-color: #F2EBDF;
+height: 100%;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;  
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+/* End of the second section */
+/* End of sections */
+
+/* Beginning of the footer */
+footer{
+width: 100%;
+background-color: #401E01;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+font-size:1vw;
+color: white;
+height: 100%;
+}
+
+.decoration {
+  text-decoration: none;
+  color: white;
+}
+/* End of sections */

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Mise en forme de l'onglet -->
+        <link rel="shortcut icon" href="../../assets/img/Logo.ico">
+		<title>Food Track</title>
+		
+		<!-- Liaison des pages de style -->
+        <link rel="stylesheet" href="../../assets/css/style_header.css"/>
+		<link rel="stylesheet" href="../../assets/css/style_utilisateur.css">
+		<link rel="stylesheet" href="../../assets/css/bootstrap.min.css" id="bootstrap-css">
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+		
+		<!-- Liaison des pages javascript -->
+		<script type="text/javascript" src="../../assets/js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/tab.js"></script>
+		
+		<!-- Liaison avec une police d'écriture spécifique -->
+		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	</head>
+
+	<body>
+		<header>
+			<div class="grid_header">
+				<div class="image_logo">
+						<img src="../../assets/img/logo.png">
+						<h1 class="title" ><a class="link" href="../../">Food Track</a></h1>
+				</div>
+				<div class="accueil">
+						<a class="link" href="../../"><h1 class="acc">Accueil</h1></a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div id="tabsContainer">
+				<div class="tabs-nav">
+					<ul>
+						<li class="active"><a href="#tab1">Information du compte</a></li><br><br>
+						<li><a href="#tab2">Historique des commandes</a></li><br><br>
+						<li><a href="#tab3">Éditer le profil</a></li>
+					</ul>
+				</div>
+				<section class="tabs-content">
+
+					<div id="tab1">
+						<table class="info_compte">
+							<tr>
+								<th><h2>Nom d'utilisateur</h2></th>
+								<th class="font_exclude">L'Homme Baguette</th>
+							</tr>
+							<tr>
+								<th><h2>Nom</h2></th>
+								<th class="font_exclude">Robin-Mores</th>
+							</tr>
+							<tr>
+								<th><h2>Prenom</h2></th>
+								<th class="font_exclude">Félix</th>
+							</tr>
+							<tr>
+								<th><h2>Email</h2></th>
+								<th class="font_exclude">felix.robinmores@epsi.fr</th>
+							</tr>
+							<tr>
+								<th><h2>N° de téléphone</h2></th>
+								<th class="font_exclude">06xxxxxx01</th>
+							</tr>
+						</table>
+					</div>
+
+	<!-- ===============================	  -->
+
+				<div id="tab2" class="table-responsive" id="sailorTableArea">
+					<table id="sailorTable" class="table table-striped table-bordered" width="100%">
+						<thead>
+							<tr>
+								<th width= 20%><h3>Référence</h3></th>
+								<th width= 40%><h3>Contenu</h3></>
+								<th width= 15%><h3>Prix</h3></th>
+								<th width= 25%><h3>Date et Heure</h3></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="font_exclude">
+								<td width= 20%>10575</td>
+								<td width= 40%>Burger Frite<br>Coca cola<br>Tarte au pomme</td>
+								<td width= 15%>7.50 €</td>
+								<td width= 25%>16/02/2020 - 12h30</td>
+							</tr>
+							<tr class="font_exclude">
+								<td width= 20%>11954</td>
+								<td width= 40%>Pizza XXL 4 fromage<br>Ice tea<br>Smoothie fraise</td>
+								<td width= 15%>15 €</td>
+								<td width= 25%>25/03/2020 - 13h</td>
+							</tr>
+							<tr class="font_exclude">
+								<td width= 20%>12120</td>
+								<td width= 40%>Pâtes carbonara<br>Orangina<br>brownies</td>
+								<td width= 15%>9.50 €</td>
+								<td width= 25%>16/02/2020 - 12h30</td>
+							</tr>
+							<tr class="font_exclude">
+								<td width= 20%>10575</td>
+								<td width= 40%>Burger Frite<br>Coca cola<br>Tarte au pomme</td>
+								<td width= 15%>7.50 €</td>
+								<td width= 25%>16/02/2020 - 12h30</td>
+							</tr>
+							<tr class="font_exclude">
+								<td width= 20%>11954</td>
+								<td width= 40%>Pizza XXL 4 fromage<br>Ice tea<br>Smoothie fraise</td>
+								<td width= 15%>15 €</td>
+								<td width= 25%>25/03/2020 - 13h</td>
+							</tr>
+							<tr class="font_exclude">
+								<td width= 20%>12120</td>
+								<td width= 40%>Pâtes carbonara<br>Orangina<br>brownies</td>
+								<td width= 15%>9.50 €</td>
+								<td width= 25%>16/02/2020 - 12h30</td>
+							</tr>
+							<tr class="font_exclude">
+								<td width= 20%>10575</td>
+								<td width= 40%>Burger Frite<br>Coca cola<br>Tarte au pomme</td>
+								<td width= 15%>7.50 €</td>
+								<td width= 25%>16/02/2020 - 12h30</td>
+							</tr>
+							<tr class="font_exclude">
+								<td width= 20%>11954</td>
+								<td width= 40%>Pizza XXL 4 fromage<br>Ice tea<br>Smoothie fraise</td>
+								<td width= 15%>15 €</td>
+								<td width= 25%>25/03/2020 - 13h</td>
+							</tr>
+							<tr class="font_exclude">
+								<td width= 20%>12120</td>
+								<td width= 40%>Pâtes carbonara<br>Orangina<br>brownies</td>
+								<td width= 15%>9.50 €</td>
+								<td width= 25%>16/02/2020 - 12h30</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+	<!-- ===============================	  -->
+
+					<div id="tab3">
+						<table class="edit_compte">
+							<tr>
+								<th width= 33%><h2>Nom</h2></th>
+								<th width= 34% class="font_exclude">Robin-Mores</th>
+								<th width= 33%><input class="include_box" type="text" placeholder="Entrer votre nouveau Nom" name="Nom" required></th>
+							</tr>
+							<tr>
+								<th width= 33%><h2>Prenom</h2></th>
+								<th width= 34% class="font_exclude">Félix</th>
+								<th width= 33%><input class="include_box" type="text" placeholder="Entrer votre nouveau prénom" name="prenom" required></th>
+							</tr>
+							<tr>
+								<th width= 33%><h2>Nom d'utilisateur</h2></th>
+								<th width= 34% class="font_exclude">L'Homme Baguette</th>
+								<th width= 33%><input class="include_box" type="text" placeholder="Entrer votre nouveau pseudo" name="Pseudo" required></th>
+							</tr>
+							<tr>
+								<th width= 33%><h2>Email</h2></th>
+								<th width= 34% class="font_exclude">felix.robinmores@epsi.fr</th>
+								<th width= 33%><input class="include_box" type="email" placeholder="Entrer votre nouveau email" name="email" required></th>
+							</tr>
+							<tr>
+								<th width= 33%><h2>Mot de passe</h2></th>
+								<th width= 34%><input class="include_box" type="password" placeholder="Entrer votre nouveau mot de passe" name="psw1" required></th>
+								<th width= 33%><input class="include_box" type="password" placeholder="Confirmer votre nouveau mot de passe" name="psw2" required></th>
+							</tr>
+							<tr>
+								<th width= 33%><h2>N° de téléphone</h2></th>
+								<th width= 34% class="font_exclude">06xxxxxx01</th>
+								<th width= 33%><input class="include_box" type="int" placeholder="Entrer votre nouveau n°" name="telephone" required></th>
+							</tr>
+							<tr>
+								<!-- <th width= 33%></th> -->
+								<th width= 100% class="bv">
+									<button class="button">
+										<span>Valider</span>
+									</button>
+									<script type="text/javascript">
+										document.querySelector('.button').onmousemove = function (e) {
+										
+											var x = e.pageX - e.target.offsetLeft;
+											var y = e.pageY - e.target.offsetTop;
+										
+											e.target.style.setProperty('--x', x + 'px');
+											e.target.style.setProperty('--y', y + 'px');
+										};
+									</script>
+								
+								</th>
+								<!-- <th width= 33%></th> -->
+							</tr>
+						</table>
+					</div>
+	<!-- ===============================	  -->
+				</section>
+			</div>
+		</main>
+	</body>
+</html>

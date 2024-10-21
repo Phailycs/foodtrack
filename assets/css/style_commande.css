@@ -1,0 +1,351 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/banner.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(15px);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+section:nth-of-type(1) {
+    background-color: white;
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    color: #262626;
+    height: 100%;
+}
+
+section:nth-of-type(2) {
+    height: 100%;
+}
+
+#CmdForm {
+    background-color: #ffffff;
+    margin: 10px 0 0 40px;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+    border-radius: 12px;
+}
+
+#CmdForm h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.fa {
+    display: none;
+}
+
+button {
+    background-color: #F2D399;
+    color: #262626;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    transition: .75s ease-out;
+}
+
+button:hover {
+    background-color: white;
+    color: #262626;
+}
+
+.PrevBtn {
+    background-color: #262626;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container {
+    height: 538px;
+    left: 50%;
+    margin: -255px 0 0 -245px;
+    position: absolute;
+    top: 50%;
+    width: 510px;
+}
+
+.calendar {
+    text-align: center;
+}
+
+.calendar header {
+    position: relative;
+}
+
+.calendar h2 {
+    text-transform: uppercase;
+}
+
+.calendar thead {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.calendar tbody {
+    color: #7c8a95;
+}
+
+.calendar td {
+    border: 20px solid transparent;
+    height: 4em;
+    line-height: 4em;
+    text-align: center;
+    width: 4em;
+    cursor: pointer;
+}
+
+.disp_cal {
+    background-color: rgba(0, 100, 0, 0.4);
+    color: white;
+}
+
+.pln_cal {
+    background-color: rgba(136, 0, 0, 0.4);
+    color: white;
+}
+
+.encadrement_calendar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+/* GENERAL STYLES */
+
+.pagination {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.pagination ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 10px 18px;
+}
+
+
+/* FIVE */
+
+.p a {
+    width: 30px;
+    height: 5px;
+    padding: 0;
+    margin: auto 5px;
+    background-color: rgba(26, 26, 26, 0.6);
+}
+
+.p .is-active {
+    background-color: #F2D399;
+    animation-duration: 1s;
+    animation-name: spark;
+}
+
+.dd_horaire {
+    list-style: none;
+    margin: 85px 100px 0 100px;
+}
+
+.dd_horaire select {
+    font-size: 18px;
+    padding: 0 25px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(26, 26, 26, 0.4);
+    color: #000000;
+    height: 50px;
+    margin: 30px auto;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+
+.etape {
+    font-size: 25px;
+    margin-top: 5px;
+    animation-duration: .75s;
+    animation-name: glissement;
+}
+
+@keyframes glissement {
+    from {
+        opacity: 0;
+        margin-top: 0;
+    }
+    to {
+        opacity: 1;
+        margin-top: 5px;
+    }
+}
+
+@keyframes spark {
+    from {
+        background-color: #262626;
+    }
+    to {
+        background-color: #F2D399;
+    }
+}
+
+@supports (display: grid) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+        grid-gap: 2rem;
+    }
+}
+
+.gallery-item {
+    position: relative;
+    flex: 1 0 20rem;
+    margin: 3rem 3rem 3rem 3rem;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ajout {
+    position: absolute;
+    top: 0;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.prix {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text_prix {
+    border-radius: 15px;
+    background-color: white;
+    color: #262626;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.text {
+    background-color: #262626;
+    color: white;
+    font-size: 20px;
+    padding: 12px 25px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.description {
+    position: absolute;
+    /* Position the background text */
+    bottom: 0;
+    /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(26, 26, 26);
+    /* Black background with 0.5 opacity */
+    color: white;
+    /* Grey text */
+    width: 100%;
+    /* Full width */
+}
+
+.desc_title {
+    margin: 15px 0 20px 0;
+}
+
+.desc_text_title {
+    margin: 0 0 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.desc_text_contenu {
+    margin: 10px 0 15px 20px;
+    font-size: 15px;
+}
+
+.contenu_panier {
+    background-color: #F2D399;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid #262626;
+    border-radius: 15px;
+}
+
+.price {
+    position: relative;
+    float: right;
+    color: #262626;
+}
+
+.double_colonne li {
+    list-style: none;
+    display: flex;
+}
+
+.magic {
+    margin: 40px 50px 0 0;
+}
+
+footer {
+    width: 100%;
+    background-color: #262626;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1vw;
+    color: white;
+    height: 100%;
+    bottom: 0;
+}
+
+.decoration {
+    text-decoration: none;
+    color: white;
+}

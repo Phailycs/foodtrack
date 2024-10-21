@@ -1,0 +1,130 @@
+body {
+    background-color: #F2D399;
+    font-family: 'Sofia';
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    width: 100%;
+    top: 40px;
+    position: relative;
+}
+
+.font_exclude {
+    font-family: Arial;
+}
+
+table,
+td,
+th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#tabsContainer {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.tab-nav {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.tabs-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.tabs-nav li {
+    display: inline-block;
+    background: #262626;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.tabs-nav a {
+    display: block;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.tabs-nav li.active {
+    background: #FFF;
+    border-radius: 10px;
+}
+
+.tabs-nav li.active a {
+    color: inherit;
+}
+
+.tabs-content {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 10px;
+    border-radius: 10px;
+    background: #262626;
+    color: white;
+    overflow: hidden;
+}
+
+.tabs-content div:not(:first-child) {
+    display: none;
+}
+
+#tab2 #sailorTableArea {
+    max-height: 725px;
+}
+
+#tab2 #sailorTable {
+    white-space: normal;
+}
+
+#tab2 tbody {
+    display: block;
+    height: 625px;
+    overflow-x: hidden;
+}
+
+#tab2 thead,
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#tab2 tbody::-webkit-scrollbar {
+    width: 0px;
+}
+
+.include_box {    
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #FFF;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.bv {
+    text-align: center;
+}

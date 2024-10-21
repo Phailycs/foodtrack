@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Food Track</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/css/commande.css"/>
+        <script type="text/javascript" src="../../assets/js/commande.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    </head>
+    <link rel="shortcut icon" href="../../assets/img/Logo.ico">
+    <body>
+        <!-- Navbar -->
+            <header>
+                <img class="logo_title" src="../../assets/img/Logo.png">
+                <h1 class="title">Food Track</h1>
+                <a class="link" href="../../index.html"><h1 class="acceuil">Accueil</h1></a>
+            </header>
+             <!-- Beginning of sections -->
+            <!-- Présentation (1) -->
+                <section id="Presentation">
+                    <div class="content">
+                        <p class="textp">
+                            <b>Frity Company</b><br>
+                            <span class="sbp">Spécialité frites - &euro;&euro;</span>
+                        </p>
+                    </div>
+                </section>
+            <!-- Sélection (2) -->
+                <section id="Selection">
+                    <form id="regForm" action="/action_page.php">
+  <h1>Register:</h1>
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab">Name:
+    <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+    <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+  </div>
+  <div class="tab">Contact Info:
+    <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+    <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+  </div>
+  <div class="tab">Birthday:
+    <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
+    <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
+    <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
+  </div>
+  <div class="tab">Login Info:
+    <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+    <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+  </div>
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+                </section>
+        <!-- End of sections -->
+
+        <!-- Footer -->
+            <footer>
+                <div><a href="#openCGU" class="decoration">Conditions générales d'utilisation</a></div>
+                <div><a href="#openCGV" class="decoration">Conditions générales de vente</a></div>
+                <div><a href="#openMl" class="decoration">Mentions légales et politique de confidentialité</a></div>
+                <div><a>Copyright &copy; 2020 FOODTRACK</a></div>
+            </footer>
+    </body>
+</html>
